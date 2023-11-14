@@ -1,0 +1,10 @@
+﻿{
+  "name": "smt-jsonparser-demo",
+  "version": "1.0.0",
+  "description": "Demo project for smt-jsonparser",
+  "dependencies": [
+    "jsoncpp",
+    "nlohmann-json",
+    "catch2"
+  ]
+}
