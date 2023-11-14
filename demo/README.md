@@ -6,6 +6,7 @@ Demo project for compare json libraries.
 ## Build Dependency
 * [CMake](https://cmake.org/)
 	* Add this to your `PATH`
+* [smt_jsonparser](https://github.com/panparae/smt_jsonparser/)	
 * [JsonCpp](https://github.com/open-source-parsers/jsoncpp/)
 * [nlohmann-json](https://github.com/nlohmann/json/)
 
