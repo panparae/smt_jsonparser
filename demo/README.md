@@ -14,7 +14,7 @@ Demo project for compare json libraries.
 
 ## Building
 ```
-cmake -B build -S . -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=C:/Workspace/vcpkg/scripts/buildsystems/vcpkg.cmake
+cmake -B build -S . -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE={YOUR_VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake
 cmake --build build/. --config Release
 ```
 
