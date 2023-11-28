@@ -50,13 +50,13 @@ public:
 	template <typename T, typename std::enable_if<std::is_same<T, jarray>::value || std::is_same<T, jobject>::value || std::is_same<T, jliterals>::value, T>::type* = nullptr>
 	T& As() {
 		if (typeid(T) == typeid(jarray) && this->m_type == smt_jsonparser::Valuetype::kNone) {
-			auto obj = static_cast<jobject*>(this);
+			auto obj = dynamic_cast<jobject*>(this);
 			if (obj) {
 				jarray* arr = new jarray;
 				obj->m_parentValue->m_jvalueMap[obj->m_parentKey] = arr;
 				this->Destroy();
 
-				return *static_cast<T*>(arr);
+				return *dynamic_cast<T*>(arr);
 			}
 		}
 
